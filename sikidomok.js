@@ -72,12 +72,12 @@ function fharomszög() {
     let a = Number(document.forms["haromszög"]["a"].value);
     let b = Number(document.forms["haromszög"]["b"].value);
     let c = Number(document.forms["haromszög"]["c"].value);
-    let m = Number(document.forms["haromszög"]["m"].value);
     let me = document.forms["haromszög"]["me"].value;
+    let s = (a + b + c) / 2
     let k = (a + b + c).toFixed(2)
-    let t = ((a * m) / 2).toFixed(2)
+    let t = (Math.sqrt(s*(s-a)*(s-b)*(s-c))).toFixed(2);
     console.log(k, t);
-    console.log(a, b, c, m);
+    console.log(a, b, c, s);
     document.getElementById("haromszögv").innerHTML = "A háromszög kerülete " + k + "" + me + "<br>" + "A háromszög területe " + t + "" + me + "²"
 
 }

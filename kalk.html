@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síkidomok</title>
+    <link rel="stylesheet" href="sikidomok.css">
+    <script src="sikidomok.js"></script>
+</head>
+
+<body>
+    <p class="header" onclick="vissza()">
+        Síkidomok
+        <br>
+        EXIT
+    </p>
+
+    <div class="gep" id="negyzet">
+        <div class="gepg">
+            <div>
+                <img class="kep" alt="Négyzet" title="Négyzet" src="Negyzet.png">
+            </div>
+            <div>
+                <form name="negyzet">
+                    <p class="megn">Oldalhosszúság</p>
+                    <input type="number" name="a">
+                    <br>
+                    <p class="megn">Mértékegység</p>
+                    <select class="me" name="me">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="M">M</option>
+                    </select>
+                    <input type="button" value="Számítás" onclick="fnegyzet()">
+                </form>
+                <p id="negyzetv"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gep" id="teglalap">
+        <div class="gepg">
+            <div>
+                <img class="kep" alt="Téglalap" title="Téglalap" src="Teglalap.png">
+            </div>
+            <div>
+                <form name="teglalap">
+                    <p class="megn">A oldal hosszúsága</p>
+                    <input type="number" name="a">
+                    <p class="megn">B oldal hosszúság</p>
+                    <input type="number" name="b">
+                    <br>
+                    <p class="megn">Mértékegység</p>
+                    <select class="me" name="me">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="M">M</option>
+                    </select>
+                    <input type="button" value="Számítás" onclick="fteglalap()">
+                </form>
+                <p id="teglalapv"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gep" id="haromszög">
+        <div class="gepg">
+            <div>
+                <img class="kep" alt="Háromszög" title="Háromszög" src="Haromszog.png">
+            </div>
+            <div>
+                <form name="haromszög">
+                    <p class="megn">A oldal hosszúsága</p>
+                    <input type="number" name="a">
+                    <p class="megn">B oldal hosszúsága</p>
+                    <input type="number" name="b">
+                    <p class="megn">C oldal hosszúsága</p>
+                    <input type="number" name="c">
+                    <p class="megn">A oldalhoz tartozó magasság</p>
+                    <input type="number" name="m">
+                    <br>
+                    <p class="megn">Mértékegység</p>
+                    <select class="me" name="me">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="M">M</option>
+                    </select>
+                    <input type="button" value="Számítás" onclick="fharomszög()">
+                </form>
+                <p id="haromszögv"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gep" id="deltoid">
+        <div class="gepg">
+            <div>
+                <img class="kep" alt="Deltoid" title="Deltoid" src="Deltoid.png">
+            </div>
+            <div>
+                <form name="deltoid">
+                    <p class="megn">A oldal hosszúsága</p>
+                    <input type="number" name="a">
+                    <p class="megn">B oldal hosszúsága</p>
+                    <input type="number" name="b">
+                    <p class="megn">Átló</p>
+                    <input type="number" name="e">
+                    <p class="megn">Másik átló</p>
+                    <input type="number" name="f">
+                    <br>
+                    <p class="megn">Mértékegység</p>
+                    <select class="me" name="me">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="M">M</option>
+                    </select>
+                    <input type="button" value="Számítás" onclick="fdeltoid()">
+                </form>
+                <p id="deltoidv"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gep" id="rombusz">
+        <div class="gepg">
+            <div>
+                <img class="kep" alt="Rombusz" title="Rombusz" src="Rombusz.png">
+            </div>
+            <div>
+                <form name="rombusz">
+                    <p class="megn">Oldalhosszúság</p>
+                    <input type="number" name="a">
+                    <p class="megn">Átló</p>
+                    <input type="number" name="e">
+                    <p class="megn">Másik átló</p>
+                    <input type="number" name="f">
+                    <br>
+                    <p class="megn">Mértékegység</p>
+                    <select class="me" name="me">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="M">M</option>
+                    </select>
+                    <input type="button" value="Számítás" onclick="frombusz()">
+                </form>
+                <p id="rombuszv"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gep" id="kör">
+        <div class="gepg">
+            <div>
+                <img class="kep" alt="Kör" title="Kör" src="Kör.png">
+            </div>
+            <div>
+                <form name="kör">
+                    <p class="megn">Sugár</p>
+                    <input type="number" name="r">
+                    <br>
+                    <p class="megn">Mértékegység</p>
+                    <select class="me" name="me">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="M">M</option>
+                    </select>
+                    <input type="button" value="Számítás" onclick="fkör()">
+                </form>
+                <p id="körv"></p>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer">Az oldalt Borda Bánk Nándor készítette. 2024 © all rights reserved.</p>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: grey;
+    color: limegreen;
+}
+
+.sikidomok {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.header {
+    font-size: 200%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+.kepcim {
+    font-size: 150%;
+    text-align: center;
+}
+
+.kep {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.gep {
+    width: 50%;
+    align-items: center;
+    background-color: rgb(53, 53, 53);
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    height: 50%;
+    display: none;
+    grid-template-columns: 100%;
+    border-radius: 20px;
+}
+
+.gepg {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: 0;
+}
+
+.gepg>div>.kep {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+input[type="number"] {
+    background-color: lime;
+    width: 40%;
+}
+
+select {
+    background-color: lime;
+}
+
+input[type="button"] {
+    background-color: lime;
+}
+
+a {
+    text-decoration: none;
+    color: limegreen;
+}
+
+@media screen and (max-width:1000px) {
+    .sikidomok {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sikidomok {
+        grid-template-columns: 100%;
+        grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    }
+
+    .gepg {
+        grid-template-columns: 80%;
+        margin-left: 20%;
+    }
+}

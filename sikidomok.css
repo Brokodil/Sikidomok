@@ -104,6 +104,10 @@ a {
         grid-template-columns: 100%;
         grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
     }
+    
+    .gep {
+        height: 70%;
+    }
 
     .gepg {
         grid-template-columns: 80%;

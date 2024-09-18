@@ -52,11 +52,10 @@ body {
     width: 50%;
     align-items: center;
     background-color: rgb(53, 53, 53);
-    position: fixed;
-    top: 25%;
-    left: 25%;
+    margin-top: 50%;
+    margin-left: 25%;
+    margin-bottom: 20%;
     right: 25%;
-    height: 50%;
     display: none;
     grid-template-columns: 100%;
     border-radius: 20px;
@@ -103,10 +102,6 @@ a {
     .sikidomok {
         grid-template-columns: 100%;
         grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-    }
-    
-    .gep {
-        height: 70%;
     }
 
     .gepg {

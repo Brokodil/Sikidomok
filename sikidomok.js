@@ -75,7 +75,7 @@ function fharomszög() {
     let me = document.forms["haromszög"]["me"].value;
     let s = (a + b + c) / 2
     let k = (a + b + c).toFixed(2)
-    let t = (Math.sqrt(s*(s-a)*(s-b)*(s-c))).toFixed(2);
+    let t = (Math.sqrt(s * (s - a) * (s - b) * (s - c))).toFixed(2);
     console.log(k, t);
     console.log(a, b, c, s);
     document.getElementById("haromszögv").innerHTML = "A háromszög kerülete " + k + "" + me + "<br>" + "A háromszög területe " + t + "" + me + "²"

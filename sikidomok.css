@@ -107,5 +107,6 @@ a {
     .gepg {
         grid-template-columns: 80%;
         margin-left: 20%;
+        margin-top: 50%;
     }
 }

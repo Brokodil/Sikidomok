@@ -104,9 +104,11 @@ a {
         grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
     }
 
+    .gep{
+        margin-top: 50%;
+    }
     .gepg {
         grid-template-columns: 80%;
         margin-left: 20%;
-        margin-top: 75%;
     }
 }
